@@ -1,0 +1,471 @@
+{
+    "Safe and Affordable Housing": {
+        "Info": "Safe and Affordable Housing refers to the provision of adequate, safe, and affordable living spaces for individuals and families. It's a key element of the government's plan to end the housing crisis, tackle homelessness, and provide aspiring homeowners with a step onto the housing ladder. Affordable housing includes homes for sale or rent and is for people whose needs are not met by the private market.",
+        "Examples": [
+            "Quinta Monroy Housing, Chile: This project was initiated to accommodate 100 families in an area of 5000 square meters, which these same families had illegally inhabited for the past 30 years.",
+            "Shared Ownership: Homes are sold at a discounted rate (at least 20% below market value) and homes referred to as being 'Rent to Buy'.",
+            "Affordable Housing for Rent: Homes let at least 20% below local market rents (affordable rental properties) or let at rates set between market rents and social rents (intermediate rental properties).",
+            "Social Rent: Set through the National Rent Regime in England at around 50% of market rents, Social Rent homes are for people on low incomes."
+        ],
+        "quiz": [
+            {
+                "que": "What is the purpose of providing Safe and Affordable Housing?",
+                "opt": [
+                    "To provide luxury homes",
+                    "To end the housing crisis and tackle homelessness",
+                    "To create more jobs in the construction industry",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is the concept of Shared Ownership in the context of affordable housing?",
+                "opt": [
+                    "Homes are rented at market rates",
+                    "Homes are sold at a discounted rate",
+                    "Homes are given away for free",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is the concept of Social Rent in the context of affordable housing?",
+                "opt": [
+                    "Homes are rented at market rates",
+                    "Homes are rented at 50% above market rates",
+                    "Homes are rented at around 50% of market rates",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What was the unique approach used in the Quinta Monroy Housing project in Chile?",
+                "opt": [
+                    "The houses were built in the sky",
+                    "The houses were built underground",
+                    "The houses were designed to allow for future expansion by the residents",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Affordable and Sustainable Transport Systems": {
+        "Info": "Affordable and Sustainable Transport Systems aim to provide safe, affordable, accessible, and sustainable transport options for all, improving road safety, notably by expanding public transport. This includes initiatives to reduce the environmental impact of transportation, promote public transportation, and improve infrastructure for non-motorized transport (like walking and cycling) and for public transport.",
+        "Examples": [
+            "Transjakarta, Indonesia: Transjakarta is the world's longest Bus Rapid Transit (BRT) system, spanning more than 250 km (155 miles), with dedicated bus lanes that carry passengers around the city. It also connects to smaller vehicles, including local buses and informal microbuses, allowing the system to serve a larger region and more residential areas that are inaccessible by BRT alone.",
+            "National Electric Bus Program, India: India's national electric bus program recently announced the approval of 10,000 electric buses for over 100 cities.",
+            "Free Public Transport, Tallinn, Estonia: The city of Tallinn in Estonia has explored offering free public transport for all residents."
+        ],
+        "quiz": [
+            {
+                "que": "What is the purpose of providing Safe and Affordable Housing?",
+                "opt": [
+                    "To increase the number of private vehicles",
+                    "To provide safe, affordable, accessible, and sustainable transport options for all",
+                    "To promote air travel",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is the concept of Bus Rapid Transit (BRT) system in the context of sustainable transport?",
+                "opt": [
+                    "A system of private buses",
+                    "A system of buses with dedicated lanes, providing metro-level services",
+                    "A system of buses that operate only during peak hours",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is unique about the public transport system in Tallinn, Estonia?",
+                "opt": [
+                    "It is the world’s longest BRT system",
+                    "It has explored offering free public transport for all residents",
+                    "It operates only electric buses",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Inclusive and Sustainable Urbanization": {
+        "Info": "Inclusive and Sustainable Urbanization refers to the process of making cities and human settlements inclusive, safe, resilient, and sustainable. It involves participatory, integrated, and sustainable human settlement planning and management. This means that urban development should be conducted in a way that is inclusive, meaning it involves all stakeholders, and sustainable, meaning it meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+        "Examples": [
+            "Paris, France: Paris has received much attention for new bike lanes and a generalized speed limit of 30 km/h for motorized traffic.",
+            "Havana, Cuba: Havana is famous for its urban agriculture.",
+            "Curitiba, Brazil: Curitiba is a pioneer in bus rapid transit systems.",
+            "Amsterdam, the Netherlands: Amsterdam is referred to as the world's cycling capital.",
+            "Union Market district, Northeast Washington, DC: The revitalization of the 45-acre Union Market district has provided a laboratory for testing practical policies and initiatives that can promote inclusive prosperity."
+        ],
+        "quiz": [
+            {
+                "que": "What does Inclusive and Sustainable Urbanization mean?",
+                "opt": [
+                    "Making cities exclusive and unsustainable",
+                    "Making cities and human settlements inclusive, safe, resilient, and sustainable",
+                    "Making cities unsafe and unaffordable",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is unique about the urbanization in Paris, France?",
+                "opt": [
+                    "It has new bike lanes and a generalized speed limit of 30 km/h for motorized traffic",
+                    "It is famous for its urban agriculture",
+                    "It is a pioneer in bus rapid transit systems",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is unique about the urbanization in Havana, Cuba?",
+                "opt": [
+                    "It has new bike lanes and a generalized speed limit of 30 km/h for motorized traffic",
+                    "It is famous for its urban agriculture",
+                    "It is a pioneer in bus rapid transit systems",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Protecting Cultural and Natural Heritage": {
+        "Info": "Protecting Cultural and Natural Heritage involves preserving and safeguarding the world's cultural and natural heritage. This includes historical landmarks, living heritage, natural sites, and cultural landscapes. The preservation and conservation of tangible culture include museology, archival science, art conservation, archaeological conservation, architectural conservation, film preservation, phonograph record preservation, and digital preservation.",
+        "Examples": [
+            "Temples of Abu Simbel, Egypt: The temples of Abu Simbel were safeguarded and relocated to prevent them from being submerged during the creation of Lake Nasser, a massive artificial water reservoir.",
+            "Angkor, Cambodia: The temples of Angkor have been preserved and restored, and the site is now a popular tourist destination.",
+            "Dubrovnik, Croatia: After being damaged in the Yugoslav Wars, the city of Dubrovnik was reconstructed.",
+            "Old Bridge of Mostar, Bosnia and Herzegovina: The Old Bridge of Mostar, destroyed in 1993 during the Croat-Bosniak War, was rebuilt and opened again in 2004.",
+            "Mausoleums of Timbuktu, Mali: After being destroyed by extremists, the mausoleums of Timbuktu were rebuilt.",
+            "Old City of Mosul, Iraq: The Old City of Mosul is currently being rebuilt after being destroyed."
+        ],
+        "quiz": [
+            {
+                "que": "What does Protecting Cultural and Natural Heritage involve?",
+                "opt": [
+                    "Destroying old buildings to make way for new ones",
+                    "Preserving and safeguarding the world’s cultural and natural heritage",
+                    "Ignoring the importance of historical landmarks",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What was done to protect the Temples of Abu Simbel in Egypt?",
+                "opt": [
+                    "They were relocated to prevent them from being submerged",
+                    "They were destroyed to make way for a new building",
+                    "They were left to decay",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What happened to the Old Bridge of Mostar in Bosnia and Herzegovina?",
+                "opt": [
+                    "It was left to decay",
+                    "It was destroyed and then rebuilt",
+                    "It was ignored",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Reducing the Adverse Effects of Natural Disasters": {
+        "Info": "Reducing the Adverse Effects of Natural Disasters involves systematic efforts to analyze and reduce the causal factors of disasters. This includes measures such as relocating communities from disaster-prone areas, enforcing building codes, holding food inventories as buffers against drought, and developing emergency response mechanisms. It also involves better hydromet data, early warning and emergency management systems.",
+        "Examples": [
+            "Mitigation Measures: Actions taken to prevent or reduce the risk to life, property, social and economic activities, and natural resources from natural hazards. For example, avoiding development in landslide- and flood-prone areas through planning and zoning ordinances may save money in construction and reduce the loss of life and damage to property and natural resources.",
+            "Emergency Response Mechanisms: These are systems put in place to respond quickly and effectively when a disaster occurs.",
+            "Building Codes: Enforcing building codes can ensure that structures are built to withstand certain types of disasters.",
+            "Community Investment in Mitigation: Post-disaster studies continue to confirm that community investment in mitigation pays direct dividends when a disaster occurs."
+        ],
+        "quiz": [
+            {
+                "que": "What does Reducing the Adverse Effects of Natural Disasters involve?",
+                "opt": [
+                    "Ignoring the potential for disasters",
+                    "Systematic efforts to analyze and reduce the causal factors of disasters",
+                    "Building in disaster-prone areas",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is the purpose of mitigation measures in the context of natural disasters?",
+                "opt": [
+                    "To increase the risk to life and property",
+                    "To prevent or reduce the risk to life, property, social and economic activities, and natural resources from natural hazards",
+                    "To ignore the potential for disasters",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is the role of building codes in reducing the adverse effects of natural disasters?",
+                "opt": [
+                    "They ensure that structures are built to withstand certain types of disasters",
+                    "They ignore the potential for disasters",
+                    "They increase the risk to life and property",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Reducing the Environmental Impact of Cities": {
+        "Info": "Reducing the Environmental Impact of Cities involves implementing sustainable practices to minimize the ecological footprint of urban areas. This includes initiatives to reduce pollution, conserve energy, promote green transportation, and enhance green spaces within cities.",
+        "Examples": [
+            "Implementation of bike lanes and pedestrian-friendly zones to encourage eco-friendly commuting.",
+            "Adoption of renewable energy sources such as solar and wind power for municipal buildings and infrastructure.",
+            "Establishment of green building standards and incentives for energy-efficient construction.",
+            "Implementation of waste management programs to reduce landfill waste and promote recycling and composting."
+        ],
+        "quiz": [
+            {
+                "que": "What is the primary goal of reducing the environmental impact of cities?",
+                "opt": [
+                    "To increase pollution levels",
+                    "To minimize the ecological footprint of urban areas",
+                    "To maximize resource consumption",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Which of the following is an example of reducing the environmental impact of cities?",
+                "opt": [
+                    "Constructing more highways",
+                    "Implementing bike lanes and pedestrian-friendly zones",
+                    "Increasing the use of fossil fuels",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What is one measure to promote eco-friendly commuting in urban areas?",
+                "opt": [
+                    "Building more parking lots",
+                    "Implementing bike-sharing programs",
+                    "Encouraging the use of private cars",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Which of the following is an example of promoting energy efficiency in urban infrastructure?",
+                "opt": [
+                    "Using outdated lighting systems",
+                    "Adopting renewable energy sources like solar power",
+                    "Ignoring water conservation practices",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Access to Safe and Inclusive Green and Public Spaces": {
+        "Info": "Access to Safe and Inclusive Green and Public Spaces refers to ensuring that all members of society have equitable access to parks, recreational areas, and public spaces that are safe, well-maintained, and inclusive of diverse communities. ",
+        "Examples": [
+            "Renovating existing parks and playgrounds to make them accessible to people with disabilities.",
+            "Implementing safety measures such as adequate lighting and security patrols in public spaces to prevent crime and enhance safety.",
+            "Creating community gardens and urban farms to promote local food production and access to green spaces in densely populated areas.",
+            "Hosting inclusive events and programming in public spaces to celebrate cultural diversity and foster community cohesion."
+        ],
+        "quiz": [
+            {
+                "que": "What does \"Access to Safe and Inclusive Green and Public Spaces\" aim to achieve?",
+                "opt": [
+                    "Limit access to public spaces",
+                    "Ensure equitable access to safe and inclusive parks and recreational areas",
+                    "Increase crime rates in urban areas",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Which of the following is an example of promoting inclusivity in public spaces?",
+                "opt": [
+                    "Hosting exclusive events that cater to specific demographics",
+                    "Implementing measures to make parks accessible to people with disabilities",
+                    "Erecting barriers to restrict access to public spaces",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What are some measures to enhance safety in public spaces?",
+                "opt": [
+                    "Reducing lighting in parks to save energy",
+                    "Implementing security patrols and adequate lighting",
+                    "Encouraging vandalism and graffiti",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "How can communities promote local food production and access to green spaces?",
+                "opt": [
+                    "By demolishing parks and recreational areas",
+                    "By creating community gardens and urban farms",
+                    "By restricting access to public spaces",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Strong National and Regional Development Planning": {
+        "Info": "Strong National and Regional Development Planning involves creating comprehensive strategies and policies at both the national and regional levels to guide economic, social, and environmental development. These plans aim to promote balanced growth, reduce disparities, and ensure sustainable development across different geographic areas.",
+        "Examples": [
+            "Formulating long-term economic development plans that prioritize infrastructure investments, job creation, and poverty reduction.",
+            "Establishing regional development plans that take into account the unique strengths, challenges, and priorities of different regions within a country.",
+            "Integrating environmental conservation and sustainability goals into development plans to mitigate the negative impacts of economic activities on natural resources and ecosystems.",
+            "Fostering collaboration between government agencies, private sector stakeholders, and local communities to implement development plans effectively and ensure inclusivity."
+        ],
+        "quiz": [
+            {
+                "que": "What is the primary goal of Strong National and Regional Development Planning?",
+                "opt": [
+                    "To promote economic inequality",
+                    "To guide economic, social, and environmental development",
+                    "To prioritize short-term gains over long-term sustainability",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Which of the following is an example of national development planning?",
+                "opt": [
+                    "Formulating strategies to address regional disparities",
+                    "Implementing infrastructure projects at the local level",
+                    "Establishing long-term economic development plans",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "How do regional development plans differ from national development plans?",
+                "opt": [
+                    "Regional plans focus on short-term goals, while national plans focus on long-term goals.",
+                    "Regional plans take into account the unique characteristics of specific geographic areas.",
+                    "National plans prioritize economic growth over social welfare.",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Why is it important to integrate environmental conservation into development planning?",
+                "opt": [
+                    "To accelerate resource depletion",
+                    "To mitigate the negative impacts of economic activities on natural resources and ecosystems",
+                    "To ignore sustainability goals for short-term gains",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Implementing Policies for Inclusion, Resource Efficiency, and Disaster Risk Reduction": {
+        "Info": "Implementing Policies for Inclusion, Resource Efficiency, and Disaster Risk Reduction involves creating and enforcing policies that ensure equal participation, efficient resource utilization, and resilience to natural and man-made disasters within communities and nations.",
+        "Examples": [
+            "Enacting laws and regulations that promote equal opportunities for marginalized groups, including women, minorities, and people with disabilities.",
+            "Implementing measures to enhance resource efficiency, such as promoting renewable energy sources, reducing waste generation, and improving water management practices.",
+            "Developing and enforcing building codes and land use regulations to mitigate the impact of disasters, such as earthquakes, floods, and wildfires, and ensure the safety of infrastructure and communities."
+        ],
+        "quiz": [
+            {
+                "que": "What is the primary goal of implementing policies for inclusion, resource efficiency, and disaster risk reduction?",
+                "opt": [
+                    "To exclude marginalized groups from participating in society",
+                    "To ensure equal opportunities and participation for all members of society",
+                    "To maximize resource consumption without regard to sustainability",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Which of the following is an example of promoting inclusion through policy implementation?",
+                "opt": [
+                    "Enacting laws that discriminate against marginalized groups",
+                    "Enforcing equal access to education and employment opportunities",
+                    "Ignoring the needs of people with disabilities",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "How can policies promote resource efficiency?",
+                "opt": [
+                    "By encouraging wasteful consumption practices",
+                    "By promoting renewable energy sources and reducing waste generation",
+                    "By ignoring environmental concerns",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Why is it important to implement policies for disaster risk reduction?",
+                "opt": [
+                    "To increase vulnerability to natural disasters",
+                    "To ensure the safety and resilience of communities and infrastructure",
+                    "To ignore the impact of disasters on society",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    },
+    "Supporting Least Developed Countries in Sustainable and Resilient Building": {
+        "Info": "Supporting Least Developed Countries in Sustainable and Resilient Building involves providing financial and technical assistance to these countries to help them build sustainable and resilient infrastructures utilizing local materials. This includes efforts to strengthen their planning, technical, and operational capacities to deliver resilient infrastructures that can withstand various shocks and stresses, including those induced by climate change.",
+        "Examples": [
+            "National Resilience Programme, Bangladesh: UNOPS worked with the Government of Bangladesh to strengthen its planning, technical, and operational capacities to deliver resilient infrastructures to withstand various shocks and stresses, including those induced by climate change.",
+            "Investment in Developing Countries: The UN prioritizes developing countries in plans and investments, encouraging them to invest in sectors that reduce poverty and increase resilience, such as job-creation, social protection, food security, universal healthcare, quality education, and digital connectivity."
+        ],
+        "quiz": [
+            {
+                "que": "What does Supporting Least Developed Countries in Sustainable and Resilient Building involve?",
+                "opt": [
+                    "Providing financial and technical assistance to these countries to help them build sustainable and resilient infrastructures utilizing local materials",
+                    "Ignoring the needs of least developed countries",
+                    "Providing financial assistance without any technical support",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What was the aim of the National Resilience Programme in Bangladesh?",
+                "opt": [
+                    "To strengthen the country's planning, technical, and operational capacities to deliver resilient infrastructures",
+                    "To ignore the potential for disasters",
+                    "To increase the risk to life and property",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "What sectors does the UN encourage developing countries to invest in to reduce poverty and increase resilience?",
+                "opt": [
+                    "Job-creation, social protection, food security, universal healthcare, quality education, and digital connectivity",
+                    "Luxury goods and services",
+                    "Non-essential sectors",
+                    "None of the above"
+                ],
+                "ans": ""
+            },
+            {
+                "que": "Why is it important to implement policies for disaster risk reduction?",
+                "opt": [
+                    "To increase vulnerability to natural disasters",
+                    "To ensure the safety and resilience of communities and infrastructure",
+                    "To ignore the impact of disasters on society",
+                    "None of the above"
+                ],
+                "ans": ""
+            }
+        ]
+    }
+}

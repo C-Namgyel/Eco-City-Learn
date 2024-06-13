@@ -1,0 +1,102 @@
+/* Main */
+.scrn {
+    position: fixed;
+    top: 12.5%;
+    left: 0%;
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    overflow: auto;
+    overflow-wrap: break-word;
+    animation-name: none;
+    animation-duration: 0.15s;
+    animation-timing-function: calc();
+    animation-fill-mode: forwards;
+}
+.head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12.5%;
+    border: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+.navDiv {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12.5%;
+    border: 0px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+.navBtns {
+    position: relative;
+    height: 75%;
+    top: 12.5%;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    margin: 0 5 0 5;
+}
+#menu {
+    position: absolute;
+    height: 30%;
+    top: 35%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    background-image: url("./assets/img/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#exp {
+    font-size: 6vw;
+    position: relative;
+    top: 25%;
+}
+
+/* Animations */
+@keyframes slideInRight {
+    0% {left: -100%;}
+    100% {left: 0%;}
+}
+@keyframes slideInLeft {
+    0% {left: 100%;}
+    100% {left: 0%;}
+}
+
+/* Home */
+#homediv {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    top: 15%;
+}
+.homeList {
+    width: 90%;
+    padding: 5%;
+    border-style: solid;
+    border-radius: 3vw;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 10px;
+}
+#homeTitle {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 6vw;
+}
