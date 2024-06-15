@@ -5,7 +5,39 @@
         <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
         <link rel="stylesheet" href="./style.css">
     </head>
+    <script>
+function setAuthScrn(scrn) {
+    for (let x of document.querySelectorAll(".authScrns")) {
+        if (x.id == scrn) {
+            x.hidden = false;
+        } else {
+            x.hidden = true;
+        }
+    }
+}
+    </script>
     <body>
+        <!-- WORK ON SPLASH -->
+        <!-- Splash -->
+        <div id="splash">
+            <div style="width: 50%; aspect-ratio: 1/1; background-image: url(./assets/img/logo.png); background-position: center; background-repeat: no-repeat; background-size: contain;"></div>
+            <b style="font-size: 50;">Loading</b>
+        </div>
+        
+        <!-- Menu -->
+        <div id="menuBarrier" hidden></div>
+        <div id="menuDiv">
+            <div style="width: 100%; background-color: #0989EC;">
+                <div id="profilePic"></div>
+                <b id="profileName">Drukgyel HSS</b><br>
+                <a id="profileEmail">EVER VICTOROUS</a>
+                <button onclick="menuClose()" style="position: absolute; top: 15px; right: 15px; background-color: red;">×</button>
+            </div>
+            <div id="menuList" style="background-color: red;">
+                <button id="signOut">Sign Out</button>
+            </div>
+        </div>
+
         <!-- Head -->
         <div class="head">
             <div id="menu"></div>
@@ -13,11 +45,51 @@
             <b id="exp"><a style="display: inline-block; width: 6vw; aspect-ratio: 1/1; background-image: url('./assets/img/leaf.png'); background-position: center; background-repeat: no-repeat; background-size: contain;"></a> 0</b>
         </div>
 
+        <!-- Snackbar -->
+        <div id="snackbar">Hello</div>
+
         <!-- Navs -->
         <div class="navDiv">
             <div value="home" class="navBtns" style="background-color: lightgrey; background-image: url('./assets/img/home.svg');" disabled="true"></div>
             <div value="community" class="navBtns" style="background-image: url('./assets/img/community.svg');"></div>
             <div value="profile" class="navBtns" style="background-image: url('./assets/img/profile.svg');"></div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="authScrns" hidden>
+            <h1 style="text-align: center;">Login</h1>
+            <br><br>
+            <div id="emailAuth" class="authBtn" style="background-color: grey;">
+                <img src="assets/img/email.png" alt="Email Icon">
+                <span>Sign in with Email</span>
+            </div>
+            <div id="googleAuth" class="authBtn" style="background-color: #4285F4;">
+                <img src="assets/img/google.png" alt="Google Icon">
+                <span>Sign in with Google</span>
+            </div>
+        </div>
+        <!-- Email Auth -->
+        <div id="emailSignIn" class="authScrns" hidden>
+            <h1 style="text-align: center;">Sign In</h1>
+            <br><br>
+            <input id="signInEmail" type="email" placeholder="Email"><br><br>
+            <input id="signInPassword" type="password" placeholder="Password"><br><br>
+            <button id="signInBtn">Sign In</button><br><br>
+            <a href="#" onclick="setAuthScrn('emailSignUp')">Create a new account</a>
+        </div>
+        <div id="emailSignUp" class="authScrns" hidden>
+            <h1 style="text-align: center;">Sign Up</h1>
+            <br><br>
+            <div id="SignUpProfile" style="position: relative; width: 25%; left: 37.5%; aspect-ratio: 1/1; border-radius: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-color: white; display: grid; place-items: center;" onclick="document.getElementById('SignUpProfileInp').click();">
+                <b id="SignUpProfileText">Click to upload</b><input type="file" id="SignUpProfileInp" style="display: none;">
+            </div><br><br>
+            <input id="SignUpUsername" type="text" placeholder="Username"><br><br>
+            <input id="SignUpEmail" type="email" placeholder="Email"><br><br>
+            <input id="SignUpPassword" type="password" placeholder="Password"><br><br>
+            <input id="SignUpPasswordRe" type="password" placeholder="Re-enter Password"><br><br>
+            <button id="SignUpBtn">Sign Up</button><br><br>
+            <a href="#" onclick="setAuthScrn('emailSignIn')">Already have an account</a>
+            <div id="covDiv">User registered successfully. Verification email sent.<br>Please check you email for the verification link.<br>Refresh this page after verification.</div>
         </div>
 
         <!-- Screens -->
@@ -35,5 +107,7 @@
 
         </div>
     </body>
-    <script src="./code.js"></script>
+    <script src="./html2canvas.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./code.js" type="module"></script>
 </html>

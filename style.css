@@ -1,4 +1,17 @@
-/* Main */
+/* Splash */
+#splash {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+}
+
+/* General */
 .scrn {
     position: fixed;
     top: 12.5%;
@@ -51,6 +64,31 @@
     background-size: 75%;
     margin: 0 5 0 5;
 }
+#exp {
+    font-size: 6vw;
+    position: relative;
+    top: 25%;
+}
+#snackbar {
+    position: fixed;
+    left: 2.5%;
+    top: 100%;
+    width: 95%;
+    font-size: 20px;
+    background-color: grey;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 20;
+    color: white;
+}
+
+/* Menu */
 #menu {
     position: absolute;
     height: 30%;
@@ -62,10 +100,103 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-#exp {
-    font-size: 6vw;
-    position: relative;
-    top: 25%;
+#menuBarrier {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+#menuDiv {
+    position: fixed;
+    width: 75%;
+    left: -75%;
+    top: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+#menuList {
+    flex-grow: 1;
+    background-color: white;
+    width: 90%;
+    padding: 5%;
+}
+#profilePic {
+    height: 75px;
+    width: 75px;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 100%;
+    text-align: center;
+    background-image: url('./assets/img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#profileName {
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+#profileEmail {
+    margin-left: 15px;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Auth */
+.authScrns {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 90%;
+    height: 100%;
+    z-index: 10;
+    background-color: lightgrey;
+    padding: 0% 5% 5% 5%;
+    text-align: center;
+}
+.authBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally and vertically */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.authBtn img {
+    width: 30px;
+    height: 30px;
+    margin: 5 10 5 0;
+}
+#covDiv {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    place-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    z-index: 100;
+    background-color: cyan;
 }
 
 /* Animations */
@@ -77,7 +208,29 @@
     0% {left: 100%;}
     100% {left: 0%;}
 }
+@keyframes snackbar {
+    0% {top: 100%;}
+    15% {top: 85%;}
+    85% {top: 85%;}
+    100% {top: 100%;}
+}
+@keyframes menuFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes menuFadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
+@keyframes menuOpen {
+    0% {left: -75%;}
+    100% {left: 0%;}
+}
+@keyframes menuClose {
+    0% {left: 0%;}
+    100% {left: -75%;}
+}
 /* Home */
 #homediv {
     position: absolute;
