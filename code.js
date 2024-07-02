@@ -90,10 +90,10 @@ document.getElementById("googleAuth").onclick = function() {
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
-        console.log(user)
+        console.log("Success", user)
         // IdP data available using getAdditionalUserInfo(result)
-        let div = createElement("div");
-        div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 10;";
+        let div = document.createElement("div");
+        div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 15;";
         div.innerHTML = "Logging In"
         set(ref(database, 'users/' + user.uid), {
             username: user.displayName,
@@ -109,13 +109,17 @@ document.getElementById("googleAuth").onclick = function() {
         // ...
     }).catch((error) => {
         // Handle Errors here.
+        console.log(error)
         const errorCode = error.code;
         const errorMessage = error.message;
         // The email of the user's account used.
-        const email = error.customData.email;
+        // const email = error.customData.email;
         // The AuthCredential type that was used.
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
+        let div = document.createElement("div");
+        div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 15;";
+        div.innerHTML = "Error<br>Try Refreshing"
     });
 };
 document.getElementById("emailAuth").onclick = function() {
