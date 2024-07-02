@@ -94,7 +94,8 @@ document.getElementById("googleAuth").onclick = function() {
         // IdP data available using getAdditionalUserInfo(result)
         let div = document.createElement("div");
         div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 15;";
-        div.innerHTML = "Logging In"
+        div.innerHTML = "Logging In";
+        document.body.appendChild(div);
         set(ref(database, 'users/' + user.uid), {
             username: user.displayName,
             email: user.email,
@@ -119,7 +120,8 @@ document.getElementById("googleAuth").onclick = function() {
         // ...
         let div = document.createElement("div");
         div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 15;";
-        div.innerHTML = "Error<br>Try Refreshing"
+        div.innerHTML = "Error<br>Try Refreshing";
+        document.body.appendChild(div);
     });
 };
 document.getElementById("emailAuth").onclick = function() {
