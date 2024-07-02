@@ -50,9 +50,9 @@ function setAuthScrn(scrn) {
 
         <!-- Navs -->
         <div class="navDiv">
-            <div value="home" class="navBtns" style="background-color: lightgrey; background-image: url('./assets/img/home.svg');" disabled="true"></div>
-            <div value="community" class="navBtns" style="background-image: url('./assets/img/community.svg');"></div>
-            <div value="profile" class="navBtns" style="background-image: url('./assets/img/profile.svg');"></div>
+            <div id="homeBtn" value="home" class="navBtns" style="background-color: lightgrey; background-image: url('./assets/img/home.svg');" disabled="true"></div>
+            <div id="communityBtn" value="community" class="navBtns" style="background-image: url('./assets/img/community.svg');"></div>
+            <div id="profileBtn" value="profile" class="navBtns" style="background-image: url('./assets/img/profile.svg');"></div>
         </div>
 
         <!-- Login -->
@@ -70,14 +70,16 @@ function setAuthScrn(scrn) {
         </div>
         <!-- Email Auth -->
         <div id="emailSignIn" class="authScrns" hidden>
+            <button style="position: fixed; left: 5%; top: 2.5%;" onclick="history.back();">Back</button>
             <h1 style="text-align: center;">Sign In</h1>
             <br><br>
             <input id="signInEmail" type="email" placeholder="Email"><br><br>
             <input id="signInPassword" type="password" placeholder="Password"><br><br>
             <button id="signInBtn">Sign In</button><br><br>
-            <a href="#" onclick="setAuthScrn('emailSignUp')">Create a new account</a>
+            <a onclick="setAuthScrn('emailSignUp'); window.history.pushState({ page: 'emailSignUp' }, '', ''); navs.push('emailSignUp');">Create a new account</a>
         </div>
         <div id="emailSignUp" class="authScrns" hidden>
+            <button style="position: fixed; left: 5%; top: 2.5%;" onclick="history.back();">Back</button>
             <h1 style="text-align: center;">Sign Up</h1>
             <br><br>
             <div id="SignUpProfile" style="position: relative; width: 25%; left: 37.5%; aspect-ratio: 1/1; border-radius: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-color: white; display: grid; place-items: center;" onclick="document.getElementById('SignUpProfileInp').click();">
@@ -88,7 +90,7 @@ function setAuthScrn(scrn) {
             <input id="SignUpPassword" type="password" placeholder="Password"><br><br>
             <input id="SignUpPasswordRe" type="password" placeholder="Re-enter Password"><br><br>
             <button id="SignUpBtn">Sign Up</button><br><br>
-            <a href="#" onclick="setAuthScrn('emailSignIn')">Already have an account</a>
+            <a onclick="setAuthScrn('emailSignIn'); window.history.pushState({ page: 'emailSignIn' }, '', ''); navs.push('emailSignIn');">Already have an account</a>
             <div id="covDiv">User registered successfully. Verification email sent.<br>Please check you email for the verification link.<br>Refresh this page after verification.</div>
         </div>
 
@@ -107,6 +109,9 @@ function setAuthScrn(scrn) {
 
         </div>
     </body>
+    <script>
+var navs = [];
+    </script>
     <script src="./html2canvas.js"></script>
     <script src="./functions.js"></script>
     <script src="./code.js" type="module"></script>

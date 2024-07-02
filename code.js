@@ -47,12 +47,10 @@ let pp;
 onAuthStateChanged(auth, (user) => {
     var user = auth.currentUser;
     if (user) {
-        console.log('User is signed in:', user.email);
         if (user.emailVerified) {
             get(child(ref(database), `users/${user.uid}`)).then((snapshot) => {
                 if (snapshot.exists()) {
                     let val = snapshot.val();
-                    console.log(val)
                     username = val.username;
                     email = val.email;
                     pp = val.pp;
@@ -60,6 +58,8 @@ onAuthStateChanged(auth, (user) => {
                     document.getElementById("profileEmail").innerHTML = email;
                     document.getElementById("profilePic").style.backgroundImage = `url("${pp}")`;
                     document.getElementById("splash").style.display = "none";
+                    window.history.pushState({ page: 'home' }, '', '');
+                    navs.push('home');
                 } else {
                   console.log("No data available");
                 }
@@ -78,6 +78,8 @@ onAuthStateChanged(auth, (user) => {
         console.log('User is signed out.');
         document.getElementById("splash").style.display = "none";
         document.getElementById("login").hidden = false;
+        window.history.pushState({ page: 'login' }, '', '');
+        navs.push('login');
     }
 });
 document.getElementById("googleAuth").onclick = function() {
@@ -90,6 +92,9 @@ document.getElementById("googleAuth").onclick = function() {
         const user = result.user;
         console.log(user)
         // IdP data available using getAdditionalUserInfo(result)
+        let div = createElement("div");
+        div.style = "position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); color: white; font-weight: bolder; font-size: 10vw; z-index: 10;";
+        div.innerHTML = "Logging In"
         set(ref(database, 'users/' + user.uid), {
             username: user.displayName,
             email: user.email,
@@ -115,6 +120,8 @@ document.getElementById("googleAuth").onclick = function() {
 };
 document.getElementById("emailAuth").onclick = function() {
     setAuthScrn('emailSignIn');
+    window.history.pushState({ page: 'emailSignIn' }, '', '');
+    navs.push('emailSignIn');
 }
 document.getElementById("SignUpBtn").onclick = function() {
     const registerUser = async (email, password) => {
@@ -241,6 +248,8 @@ for (let x of document.querySelectorAll(".navBtns")) {
                     f.style.backgroundColor = "rgba(0, 0, 0, 0)";
                 }
             }
+            window.history.pushState({ page: `${x.getAttribute("value")}` }, '', '');
+            navs.push(x.getAttribute("value"));
         }
     }
 }
@@ -255,3 +264,31 @@ function createList() {
         document.getElementById("homediv").appendChild(div);
     }
 };
+
+// Custom back;
+function customBack(event) {
+    event.preventDefault();
+    navs.splice(navs.length - 1, 1);
+    history.replaceState(null, null, window.location.href);
+    if (navs[0] == undefined) {
+        // Do nothing
+    } else if (navs[navs.length - 1].includes("email")) {
+        setAuthScrn(navs[navs.length - 1]);
+    } else if (navs[navs.length - 1] == "login") {
+        document.getElementById("emailSignUp").hidden = true;
+        document.getElementById("emailSignIn").hidden = true;
+        document.getElementById("login").hidden = false;
+    } else {
+        // document.getElementById(navs[navs.length - 1] + "Btn").click();
+        setScreen(navs[navs.length - 1]);
+        document.getElementById(navs[navs.length - 1] + "Btn").setAttribute("disabled", "true");
+        document.getElementById(navs[navs.length - 1] + "Btn").style.backgroundColor = "lightgrey";
+        for (let f of document.querySelectorAll(".navBtns")) {
+            if (f != document.getElementById(navs[navs.length - 1] + "Btn")) {
+                f.setAttribute("disabled", "false");
+                f.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            }
+        }
+    }
+}
+window.addEventListener('popstate', customBack);
